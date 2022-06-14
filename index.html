@@ -330,20 +330,57 @@
                     </svg>
                 </a></li>
             </ul>
+            <!-- <div class="footer-form">
+                <form>
+                    <label for="user-name-footer">Подпишитесь на рассылку</label>
+                    <input type="text" class="input-email-footer" name="user-name-footer"/>
+                    <input type="text"/>
+                </form>
+            </div> -->
         </div>
     </div>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                 Mollitia impedit ratione exercitationem tempora sint saepe
-                  laboriosam fugit at qui similique doloremque, 
-                  cupiditate perferendis
-                 unde harum maiores debitis ea reiciendis dolor?</p> -->
                  <button class="modal-soc-btn" data-modal-close>
                      <svg class="modal-soc-icon" width="18" height="18">
                         <use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
                     </svg>
                  </button>
+                <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+                <form>
+                    <label for="user-name" class="modal-label">Имя</label>
+                    <input type="text"
+                     class="modal-input"
+                      name="user-name"
+                       placeholder=""
+                       required
+                       minlength="4"
+                       id="user-name"
+                       autofocus/>
+                    <label for="user-tel" class="modal-label">Телефон</label>
+                    <input type="tel"
+                     class="modal-input"
+                      name="user-tel"
+                       placeholder=""
+                       required
+                       minlength="10"
+                       id="user-tel"
+                       />
+                    <label for="user-email" class="modal-label">Почта</label>   
+                    <input type="email"
+                     class="modal-input"
+                      name="user-email"
+                       placeholder=""
+                       required
+                       minlength="6"
+                       id="user-email"/>
+                    <label for="user-coment" class="modal-label">Комментарий</label> 
+                    <textarea name="user-coment" 
+                    id="user-coment" 
+                    class="modal-text"
+                    placeholder="Введите текст"></textarea>
+                    <button type="submit"class="modal-btn">Отправить</button>
+                </form>
         </div>
     </div>
 </footer>
