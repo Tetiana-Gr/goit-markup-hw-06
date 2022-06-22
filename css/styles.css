@@ -606,12 +606,9 @@ img {
 }
 
 /*------------------footer modal---------------*/
-/* .field-footer {
+
+.subs-form {
   display: flex;
-  justify-content: center; 
-} */
-.subs-footer {
-  display: inline-block;
 }
 .footer-text-subs {
   margin-bottom: 20px;

@@ -205,59 +205,113 @@
 <footer class="footer">
     <div class="container footer-content">
             <address class="footer-address">
-            <a class="footer-nav link" href="/index.html"><span class="logo1-footer">Web</span><span class="logo2-footer">Studio</span></a>
-            <ul class="list">
-                <li class="footer-list">
-                    <a class="footer-info-adres link" href="https://goo.gl/maps/SjzHvNBgEdfBXJLG8">г.Киев,пр-т.ЛесиУкраинки,26</a>
-                </li>
-                <li class="footer-list">
-                    <a class="footer-info-nav link" href="mailo:info@example.com">info@example.com</a>
-                </li>
-                <li class="footer-list">
-                    <a class="footer-info-nav link" href="tel:0991111111">+38 099 111 11 11</a>
-                </li>
-            </ul>
+                <a class="footer-nav link" href="/index.html"><span class="logo1-footer">Web</span><span class="logo2-footer">Studio</span></a>
+                <ul class="list">
+                    <li class="footer-list">
+                        <a class="footer-info-adres link" href="https://goo.gl/maps/SjzHvNBgEdfBXJLG8">г.Киев,пр-т.ЛесиУкраинки,26</a>
+                    </li>
+                    <li class="footer-list">
+                        <a class="footer-info-nav link" href="mailo:info@example.com">info@example.com</a>
+                    </li>
+                    <li class="footer-list">
+                        <a class="footer-info-nav link" href="tel:0991111111">+38 099 111 11 11</a>
+                    </li>
+                </ul>
             </address>
         <div class="footer-join">
             <p class="footer-text">присоединяйтесь</p>
             <ul class="footer-soc-list list">
-                <li class="footer-soc-item"><a href="" class="footer-soc-link link">
-                    <svg class="footer-soc-icon" width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                    </svg>
-                </a></li>
-                <li class="footer-soc-item"><a href="" class="footer-soc-link link">
-                    <svg class="footer-soc-icon" width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                    </svg>
-                </a></li>
-                <li class="footer-soc-item"><a href="" class="footer-soc-link link">
-                    <svg class="footer-soc-icon" width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                    </svg>
-                </a></li>
-                <li class="footer-soc-item"><a href="" class="footer-soc-link link">
-                    <svg class="footer-soc-icon" width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                    </svg>
-                </a></li>
+                <li class="footer-soc-item"><a href="" class="footer-soc-link link"><svg class="footer-soc-icon" width="20" height="20"><use href="./images/symbol-defs.svg#icon-instagram"></use></svg></a></li>
+                <li class="footer-soc-item"><a href="" class="footer-soc-link link"><svg class="footer-soc-icon" width="20" height="20"><use href="./images/symbol-defs.svg#icon-twitter"></use></svg></a></li>
+                <li class="footer-soc-item"><a href="" class="footer-soc-link link"><svg class="footer-soc-icon" width="20" height="20"><use href="./images/symbol-defs.svg#icon-facebook"></use></svg></a></li>
+                <li class="footer-soc-item"><a href="" class="footer-soc-link link"><svg class="footer-soc-icon" width="20" height="20"><use href="./images/symbol-defs.svg#icon-linkedin"></use></svg></a></li>
             </ul>
         </div>
         <div class="subs-footer">
-            <p class="footer-text-subs">Подпишитесь на рассылку</p>
-            <form class="subs-form">
-                <div class="field-footer">
-                    <input required
-                    type="email"
-                    class="email-input-footer"
-                    name="user-name-subs"
-                    placeholder="E-mail"/>
-                    <button class="button-subs" type="submit">Подписаться
-                        <svg class="svg-footer" width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-icon-send"></use></svg>
-                    </button>
-                </div>
-            </form>
+        <p class="footer-text-subs">Подпишитесь на рассылку</p>
+        <form class="subs-form">
+                <input required
+                type="email"
+                class="email-input-footer"
+                name="user-name-subs"
+                placeholder="E-mail"/>
+                <button class="button-subs" type="submit">Подписаться<svg class="svg-footer" width="20" height="20"><use href="./images/symbol-defs.svg#icon-icon-send"></use></svg></button>
+        </form>
+    </div>
+    </div>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+                 <button class="modal-soc-btn" data-modal-close>
+                     <svg class="modal-soc-icon" width="18" height="18">
+                        <use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1"></use></svg>
+                 </button>
+                <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+                <form>
+                    <div class="modal-field">
+                        <label for="user-name" class="modal-label">Имя</label>
+                        <div class="modal-wrap">
+                        <input type="text"
+                        class="modal-input"
+                        name="user-name"
+                        placeholder=""
+                        required
+                        minlength="4"
+                        id="user-name"
+                        autofocus/>
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./images/symbol-defs.svg#icon-person-black-18dp-1"></use></svg>
+                        </div>
+                    </div>
+                    <div class="modal-field">
+                        <label for="user-tel" class="modal-label">Телефон</label>
+                        <div class="modal-wrap">
+                        <input type="tel"
+                        class="modal-input"
+                        name="user-tel"
+                        placeholder=""
+                        required
+                        minlength="10"
+                        id="user-tel"
+                        />
+                        <svg class="modal-icon" width="18" height="18">
+                        <use href="./images/symbol-defs.svg#icon-phone-black-18dp-1"></use></svg>
+                        </div>
+                    </div>
+                    <div class="modal-field">
+                        <label for="user-email" class="modal-label">Почта</label>
+                        <div class="modal-wrap">   
+                        <input type="email"
+                        class="modal-input"
+                        name="user-email"
+                        placeholder=""
+                        required
+                        minlength="6"
+                        id="user-email"/>
+                        <svg class="modal-icon" width="18" height="18">
+                        <use href="./images/symbol-defs.svg#icon-email-black-18dp-1"></use></svg>
+                        </div>
+                    </div>
+                    <div class="modal-field-coment">
+                        <label for="user-coment" class="modal-label">Комментарий</label> 
+                        <textarea name="user-coment" 
+                        id="user-coment" 
+                        class="modal-text"
+                        placeholder="Введите текст"></textarea>
+                    </div>
+                    <div class="modal-field-checkbox">
+                        <input type="checkbox"
+                        name="privacy"
+                        value="true"
+                        class="modal-check visually-hidden"
+                        id="privacy"/>
+                        <label for="privacy" class="checkbox-text">
+                            Соглашаюсь с рассылкой и принимаю 
+                            <a href="" class="href-modal">Условия договора</a></label>
+                    </div>
+                    <div class="modal-field-btn">
+                    <button type="submit" class="modal-btn">Отправить</button>
+                    </div>
+                </form>
         </div>
     </div>
 </footer>
